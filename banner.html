@@ -1,0 +1,26 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<!-- Source for assets/banner-light.png and assets/banner-dark.png: the same two
+     colors and the same Newsreader as jiaming-sun-900.github.io. Regenerate both
+     after editing, from this directory, at 2x so the type stays sharp:
+
+     C="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+     for m in light dark; do h=""; [ $m = dark ] && h="#dark"
+       "$C" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=2 \
+         --window-size=1200,300 --virtual-time-budget=6000 \
+         --screenshot=assets/banner-$m.png "file://$PWD/banner.html$h"; done -->
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=block" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0}
+  body{width:1200px;height:300px;background:#f0eee6;color:#1f1e1d;
+       font-family:"Newsreader",serif;display:flex;flex-direction:column;
+       justify-content:center;padding:0 72px;box-sizing:border-box;overflow:hidden}
+  body.dark{background:#1f1e1d;color:#f0eee6}
+  h1{font-variation-settings:"opsz" 72;font-size:92px;font-weight:600;
+     line-height:1.05;letter-spacing:-0.005em;margin:0 0 18px}
+  p{font-variation-settings:"opsz" 24;font-size:30px;font-weight:400;
+    line-height:1.45;margin:0;text-wrap:balance}
+</style></head><body>
+<script>if (location.hash === '#dark') document.body.className = 'dark';</script>
+<h1>Jiaming Sun</h1>
+<p>I build software and web products, and I care most about the interactions people actually touch.</p>
+</body></html>
